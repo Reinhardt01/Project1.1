@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/* --------------------------Body-------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,6 @@
     max-width: 900em;
 }
 
-
 .body{
     display: flex; 
     justify-content: center;
@@ -19,6 +21,20 @@
     min-height: 100vh;
     background-color: #282B35;
 }
+
+.background_img{
+    /* background-color: rgba(20, 26, 33, 0.9); */
+    background-color: #282B35;
+    /* background-image: url("pint3.jfif"); */
+    background-blend-mode: multiply;
+    background-size: cover;
+    /* max-width: 900em; */
+}
+
+/* --------------------------Body-------------------------------- */
+/* --------------------------Containers-------------------------------- */
+
+
 .container{
     position: relative;
     width: 1000px;
@@ -58,59 +74,14 @@
 }
 
 
-.skeleton{
-    
-    animation: skeleton-loading 1s linear infinite alternate;
-}
-
-@keyframes skeleton-loading{
-    0%{
-        background-color: hsl(200, 20%, 70%);
-    }
-    100%{
-        background-color: hsl(200, 20%, 95%);
-    }
-}
-
-@media (max-width: 991px){
-    .container{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-        }
-    .container .card{
-        flex-direction: column;
-        max-width: 350px;
-        }
-    .container .card .imgbx{
-        max-width: 100%;
-        }
-    .container .card .content{
-        margin-left: 0px;
-    }
-
-}
-/* Header styles begins here.*/
-.background_img{
-    /* background-color: rgba(20, 26, 33, 0.9); */
-    background-color: #282B35;
-    /* background-image: url("pint3.jfif"); */
-    background-blend-mode: multiply;
-    background-size: cover;
-    padding-bottom: 60px;
-    /* max-width: 900em; */
-}
-
+/* --------------------------Containers-------------------------------- */
+/* -----------------------------Header/Nav----------------------------- */
 .store-main-header {
     background-color: rgba(0, 0, 0, .0);
     background-image: url("geelblom2.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    object-position: bottom;
+    /* object-position: bottom; */
     padding-bottom: 60px;
     border-bottom: 5px solid white;
 }
@@ -138,8 +109,7 @@
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-    
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 .main-nav li {
@@ -147,8 +117,10 @@
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
+    background-color: rgba(255, 255, 255, .3);
 }
+
+/* -----------------------------Header/Nav----------------------------- */
 
 .page-title { 
     text-align: center;
@@ -162,30 +134,30 @@
     font-size: 5em;
 }
 
+/* -----------------------------Footer/Nav----------------------------- */
+
 .footer-name { 
     margin: 0;
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;    
+    font-size: 3.5em;
+    font-family: 'Dancing Script', cursive;    
     font-weight:bolder;
     color: black;
     font-style: italic;
 }
 
 .main-footer {
-    /* background-color: #fcb423; */
+    /* background-color: white; */
     background-image: url("geelblom3.jpg");
     color: #ffffff;
+    /* background:linear-gradient(to right, #fbff00, #22ff00, #f23a7e); */
     padding: 0.5em;
     background-size: cover;
-
+    opacity: 0.9;
 }
-
 
 .main-footer-container {
     display: flex;
     align-items: center;
-    
-
 }
 
 .main-footer-container ul {
@@ -202,6 +174,11 @@
     height: 30px;
     margin: 0;
 }
+
+.nav-panel{
+    background-color: rgba(10, 10, 10, 0.5)
+}
+
 .footer-list li{
     display: inline-block;
     padding: 0 .5em;
@@ -210,9 +187,35 @@
     font-size: 20px;
     text-decoration:underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
 .footer-list{
     text-align: center;
 }
+
+/* -----------------------------Footer/Nav----------------------------- */
+/* -------------------------Media Queries--------------------------------- */
+
+@media (max-width: 991px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        }
+    .container .card{
+        flex-direction: column;
+        max-width: 350px;
+        }
+    .container .card .imgbx{
+        max-width: 100%;
+        }
+    .container .card .content{
+        margin-left: 0px;
+    }
+}
+
+/* -----------------------------Media Queries----------------------------- */

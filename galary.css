@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+/* ------------------Body/Container-------------------------------- */
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  max-width: 900em;
+  min-width: none;
 }
 
 .container{
@@ -71,58 +74,20 @@ li{
  letter-spacing: 3px;
 }
 
-.skeleton{
-    
-  animation: skeleton-loading 1s linear infinite alternate;
-}
-
-@keyframes skeleton-loading{
-  0%{
-      background-color: hsl(200, 20%, 70%);
-  }
-  100%{
-      background-color: hsl(200, 20%, 95%);
-  }
-}
-
-
-@media only screen and (max-width: 769px){
-    .container .box{
-   flex-direction: column;
-  }
-
-.container .box .dream{
-  width: 100%;
-}
-
-}
-
-@media only screen and (max-width: 643px){
-.container .heading{
-  width: 100%;
-}
-.container .heading h3{
-  font-size: 1em;
-
-}
-}
-
 background_img{
-    /* background-color: rgba(20, 26, 33, 0.9); */
     background-color: #282B35;
-    /* background-image: url("pint3.jfif"); */
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 60px;
-    /* max-width: 900em; */
 }
+/* ------------------Body/Container-------------------------------- */
+/* ------------------Header/Nav-------------------------------- */
 
-.store-main-header {
+.main-header {
     background-color: rgba(0, 0, 0, .0);
     background-image: url("geelblom2.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    object-position: bottom;
     padding-bottom: 60px;
     border-bottom: 5px solid white;
 }
@@ -174,45 +139,50 @@ background_img{
     font-size: 5em;
 }
 
+/* ------------------Header/Nav-------------------------------- */
+/* ------------------Footer/Nav-------------------------------- */
+
 .footer-name { 
-    margin: 0;
-    font-size: 3em;
-    font-family: 'Dancing Script', cursive;    
-    font-weight:bolder;
-    color: black;
-    font-style: italic;
+  margin: 0;
+  font-size: 3.5em;
+  font-family: 'Dancing Script', cursive;    
+  font-weight:bolder;
+  color: black;
+  font-style: italic;
 }
 
 .main-footer {
-    /* background-color: #fcb423; */
-    background-image: url("geelblom3.jpg");
-    color: #ffffff;
-    padding: 0.5em;
-    background-size: cover;
-
+  /* background-color: white; */
+  background-image: url("geelblom3.jpg");
+  color: #ffffff;
+  /* background:linear-gradient(to right, #fbff00, #22ff00, #f23a7e); */
+  padding: 0.5em;
+  background-size: cover;
+  opacity: 0.9;
 }
 
-
 .main-footer-container {
-    display: flex;
-    align-items: center;
-    
-
+  display: flex;
+  align-items: center;
 }
 
 .main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
+  flex-grow: 1;
+  text-align: end;
 }
 
 .footer-nav li {
-    padding: 0 .5em;
+  padding: 0 .5em;
 }
 
 .footer-nav img {
-    width: 30px;
-    height: 30px;
-    margin: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.nav-panel{
+  background-color: rgba(10, 10, 10, 0.5)
 }
 
 .footer-list li{
@@ -223,9 +193,60 @@ background_img{
   font-size: 20px;
   text-decoration:underline;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
 }
 
 .footer-list{
   text-align: center;
 }
+
+/* ------------------Footer/Nav-------------------------------- */
+/* ------------------Madia Queries-------------------------------- */
+
+@media only screen and (max-width: 769px){
+  .container .box{
+ flex-direction: column;
+}
+
+.container .box .dream{
+width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 643px){
+
+}
+
+@media all and (max-width: 600px) {
+  p{font-size: 1em;
+  }
+  .profile-image {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 7.5px;
+  }
+  .page-title{
+      font-size: 2.5em;
+  }
+  .section-header{
+      font-size: 1.65em;
+  }
+  .footer-name{
+      font-size: 1.75em;
+  }
+  .footer-list{
+      font-size: 0.625em;
+  }
+  .container .heading{
+    width: 100%;
+  }
+  .container .heading h3{
+    font-size: 1em;
+  }
+}
+  .nav a{
+    font-size: 2rem;
+  }
+/* ------------------Madia Queries-------------------------------- */
+
