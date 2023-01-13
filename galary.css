@@ -213,9 +213,7 @@ width: 100%;
 
 }
 
-@media only screen and (max-width: 643px){
 
-}
 
 @media all and (max-width: 600px) {
   p{font-size: 1em;
@@ -245,8 +243,9 @@ width: 100%;
     font-size: 1em;
   }
   .nav a{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
+
 /* ------------------Madia Queries-------------------------------- */
 

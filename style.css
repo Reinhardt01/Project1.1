@@ -12,12 +12,14 @@
     color: white;
     /* max-width:fit-content; */
     /* align-self: center; */
+    
 }
 
 html, body {
     margin: 0;
     padding: 0;
     max-width:900em;
+    overflow-x: hidden;
     
 }
 
@@ -183,7 +185,7 @@ h1{
     font-weight: normal;
     color: white;
     text-align: center;
-    font-size: 3.3em;
+    font-size: 3em;
     text-decoration:solid underline;
 }
 
