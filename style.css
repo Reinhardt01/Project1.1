@@ -9,7 +9,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: Black;
     /* max-width:fit-content; */
     /* align-self: center; */
     margin: 0;
@@ -30,7 +30,7 @@
 
 .background_img{
     /* background-color: rgba(20, 26, 33, 0.9); */
-    background-color: #282B35;
+    background-color: white;
     /* background-image: url("pint3.jfif"); */
     background-blend-mode: multiply;
     background-size: cover;
@@ -79,15 +79,20 @@ h1{
 }
 
 .profile-image {
-    float: left;
-    height: 200px;
+    /* height: 200px; */
     width: 200px;
-    margin: 15px;
-    border-radius: 50%;
+    float: left;
+    /* border-radius: 50%; */
+    shape-outside: circle(50%);
+    margin: 1em;
+    
+    
     animation: profile-load 900ms ease-out 900ms;
     animation-fill-mode: forwards;
     transform: translateX(-1000px);
     opacity: 0;
+    border-radius: 1.5em;
+    
 }
 
 @keyframes profile-load {
@@ -105,7 +110,7 @@ h1{
 .text-style{
     font-size: 2em;
     font-style: normal;
-    color: white;
+    color: black;
     font-family: 'Roboto Slab', serif;
     font-weight: lighter;
     animation: text-load 900ms ease-out 1800ms;
@@ -214,7 +219,7 @@ h1{
     /* background:linear-gradient(to right, #fbff00, #22ff00, #f23a7e); */
     padding: 0.5em;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .wA{
