@@ -135,6 +135,30 @@
     font-size: 5em;
 }
 
+.price{
+    line-height: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.blue{
+    line-height: 2em;
+    color: aqua;
+}
+
+.green{
+    line-height: 2em;
+    color: greenyellow;
+}
+.gold{
+    line-height: 2em;
+    color: gold;
+}
+
 /* -----------------------------Footer/Nav----------------------------- */
 
 .footer-name { 

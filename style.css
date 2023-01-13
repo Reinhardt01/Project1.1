@@ -161,6 +161,7 @@ h1{
     font-size: 1.1em;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3)
+    
 }
 
 .main-nav li {
@@ -171,7 +172,7 @@ h1{
     background-color: rgba(255, 255, 255, .3)
 }
 
-.page-title { 
+.page-title {
     text-align: center;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -184,12 +185,14 @@ h1{
 }
 
 .section-header {
+    padding-top: 0.5em;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     color: white;
     text-align: center;
     font-size: 3em;
     text-decoration:solid underline;
+    padding-bottom: 0.5em;
 }
 
 /* -------------------Nav/Header-------------------------- */
