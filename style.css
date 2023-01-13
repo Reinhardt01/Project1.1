@@ -12,16 +12,19 @@
     color: white;
     /* max-width:fit-content; */
     /* align-self: center; */
-    
-}
-
-html, body {
     margin: 0;
     padding: 0;
-    max-width:900em;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;    
+    max-width:900rem;
+
 }
+
+/* body {
+   
+    
+    min-height: 100vh;
+
+} */
 
 
 
@@ -129,7 +132,7 @@ h1{
     background-color: rgba(0, 0, 0, );
     background-image: url("geelblom2.jpg");
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size:auto;
     padding-bottom: 60px;
     border-bottom: 5px solid white;
 }
